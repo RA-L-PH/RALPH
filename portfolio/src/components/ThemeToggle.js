@@ -1,15 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
+import { FaSun, FaMoon } from "react-icons/fa";
 
-const ThemeToggle = () => {
+function ThemeToggle() {
+  const [darkTheme, setDarkTheme] = useState(false);
+
   const toggleTheme = () => {
-    document.documentElement.classList.toggle('dark');
+    setDarkTheme(!darkTheme);
+    document.body.classList.toggle("dark-theme", !darkTheme);
   };
-
   return (
-    <button onClick={toggleTheme} className="p-2 bg-primary rounded-full shadow-neomorphic">
-      🌞 / 🌜
-    </button>
+    <button className="theme-toggle-btn" onClick={toggleTheme}>
+          {darkTheme ? <FaSun /> : <FaMoon />}
+        </button>
   );
-};
+}
 
 export default ThemeToggle;

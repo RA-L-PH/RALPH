@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-light {
+  @apply bg-white text-gray-800;
+}
+
+.bg-dark {
+  @apply bg-gray-900 text-white;
+}
+
+.text-primary {
+  @apply text-blue-500;
+}
+
+.shadow-neomorphic {
+  @apply shadow-lg rounded-lg;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.1), -8px -8px 15px rgba(255, 255, 255, 0.7);
+}
+

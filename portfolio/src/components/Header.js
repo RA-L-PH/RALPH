@@ -5,7 +5,8 @@ import ThemeToggle from "./ThemeToggle";
 function Header() {
   return (
     <header className="header">
-      <img src={logo} alt="logo" className="w-20 h-20" />
+      <img src={logo} alt="logo" className="logo" />
+      <h2>"If it Works, Don't Mess with It"</h2>
       <ThemeToggle />
     </header>
   );

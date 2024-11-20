@@ -1,8 +1,9 @@
 /* General Reset */
-body, html, h1, h2, h3, p, ul, li, a {
+body, html{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scrollbar-width: none;
 }
 
 body {
@@ -14,53 +15,61 @@ body {
 /* Light Theme */
 :root {
   --background-color: #f2f2f2;
-  --text-color: #212529;
+  --text-color: #4b0082; /* Indigo for text */
 
   /* Flat */
-  --flat-bg: #f2f2f2;
-  --flat-shadow-dark: #d5d5d5;
+  --flat-bg: #e6e6fa; /* Lavender */
+  --flat-shadow-dark: #b3b3cc; /* Dark Lavender */
   --flat-shadow-light: #ffffff;
 
   /* Concave */
   --concave-bg: linear-gradient(145deg, #dadada, #ffffff);
-  --concave-shadow-dark: #d5d5d5;
+  --concave-shadow-dark: #b3b3cc; /* Dark Lavender */
   --concave-shadow-light: #ffffff;
 
   /* Convex */
   --convex-bg: linear-gradient(145deg, #ffffff, #dadada);
-  --convex-shadow-dark: #d5d5d5;
+  --convex-shadow-dark: #b3b3cc; /* Dark Lavender */
   --convex-shadow-light: #ffffff;
 
   /* Pressed */
-  --pressed-bg: #f2f2f2;
-  --pressed-shadow-dark: #d5d5d5;
+  --pressed-bg: #e6e6fa; /* Lavender */
+  --pressed-shadow-dark: #b3b3cc; /* Dark Lavender */
   --pressed-shadow-light: #ffffff;
+
+  --lavender-bg: #e6e6fa;
+  --lavender-shadow-dark: #b3b3cc;
+  --lavender-shadow-light: #ffffff;
 }
 
 /* Dark Theme */
 body.dark-theme {
-  --background-color: #262626;
-  --text-color: #e9ecef;
+  --background-color: #38393c; /* New base color for dark theme */
+  --text-color: lavender; /* Orange for text */
 
   /* Flat */
-  --flat-bg: #262626;
-  --flat-shadow-dark: #212121;
-  --flat-shadow-light: #2b2b2b;
+  --flat-bg: #38393c; /* New base color */
+  --flat-shadow-dark: #2e2f31; /* Adjusted shadow */
+  --flat-shadow-light: #4a4b4d; /* Adjusted shadow */
 
   /* Concave */
-  --concave-bg: linear-gradient(145deg, #222222, #292929);
-  --concave-shadow-dark: #212121;
-  --concave-shadow-light: #2b2b2b;
+  --concave-bg: linear-gradient(145deg, #2e2f31, #4a4b4d);
+  --concave-shadow-dark: #2e2f31; /* Adjusted shadow */
+  --concave-shadow-light: #4a4b4d; /* Adjusted shadow */
 
   /* Convex */
-  --convex-bg: linear-gradient(145deg, #292929, #222222);
-  --convex-shadow-dark: #212121;
-  --convex-shadow-light: #2b2b2b;
+  --convex-bg: linear-gradient(145deg, #4a4b4d, #2e2f31);
+  --convex-shadow-dark: #2e2f31; /* Adjusted shadow */
+  --convex-shadow-light: #4a4b4d; /* Adjusted shadow */
 
   /* Pressed */
-  --pressed-bg: #262626;
-  --pressed-shadow-dark: #212121;
-  --pressed-shadow-light: #2b2b2b;
+  --pressed-bg: #38393c; /* New base color */
+  --pressed-shadow-dark: #2e2f31; /* Adjusted shadow */
+  --pressed-shadow-light: #4a4b4d; /* Adjusted shadow */
+
+  --violet-bg: #8a2be2;
+  --violet-shadow-dark: #5e1a91;
+  --violet-shadow-light: #b19cd9;
 }
 
 /* Apply Variables */
@@ -74,7 +83,8 @@ body {
 /* Flat */
 .neumorphic-flat {
   background: var(--flat-bg);
-  box-shadow: 7px 7px 14px var(--flat-shadow-dark), -7px -7px 14px var(--flat-shadow-light);
+  box-shadow:  7px 7px 14px var(--flat-shadow-dark),
+             -7px -7px 14px var(--flat-shadow-light);
   transition: box-shadow 0.3s;
 }
 
@@ -88,7 +98,7 @@ body {
 /* Convex */
 .neumorphic-convex {
   background: var(--convex-bg);
-  box-shadow: 7px 7px 14px var(--convex-shadow-dark), -7px -7px 14px var(--convex-shadow-light);
+  box-shadow: 7px 7px 14px var(--convex-shadow-dark), -5px -5px 14px var(--convex-shadow-light);
   transition: box-shadow 0.3s;
 }
 
@@ -101,6 +111,10 @@ body {
 
 /* General Styling */
 
+main{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 /* Header */
 .header {
   background: var(--background-color);
@@ -110,18 +124,27 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.logo a{
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-decoration: none;
-  color: var(--text-color);
-  img{
-    width: 100px;
-    height: 100px;
+  h2{
+    font-size: 1.5rem;
   }
-}
+  .logo{
+    height: 75px;
+    width: 75px;
+  }
+  }
+  @media screen and (max-width: 768px) {
+    h2{
+      font-size: 1rem !important;
+      text-align: center;
+    }
+    .logo{
+      height: 40px !important;
+      width: 40px !important;
+    }
+    
+  }
+  
+
 
 
 
@@ -139,7 +162,7 @@ body {
 }
 
 .theme-toggle-btn:hover {
-  box-shadow: inset 7px 7px 14px var(--pressed-shadow-dark), inset -7px -7px 14px var(--pressed-shadow-light); /* Pressed style */
+  transform: scale(1.1);
 }
 
 .about-section{
@@ -160,28 +183,31 @@ body {
     border-radius: 15px;
 
     img{
-      padding: 10px;
+      padding: 5px;
       width: 200px;
       height: 200px;
       border-radius: 50%;
+      border: orangered 2px solid;
     }
   }
   .about-text{
     padding: 8px;
     width: 450px;
-    height: 250px;
+    min-height: 250px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     border-radius: 15px;
     h1 {
+      color: orangered;
       font-size: 2em;
-      font-weight: normal;
+      font-weight: bolder;
     }
     
-    h2 {
-      font-size: 1.75em;
-      font-weight: bolder;
+    h2{
+      font-size: 1em;
+      font-weight: normal;
+      text-align: left;
     }
     
     h4 {
@@ -191,17 +217,23 @@ body {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      width: fit-content;
+      background: var(--violet-bg);
+      width: 175px;
       border-radius: 10px;
-      justify-content: start;
+      box-shadow: inset 7px 7px 14px var(--violet-shadow-dark), inset -7px -7px 14px var(--violet-shadow-light); /* Pressed style */
+      justify-content: space-evenly;
       padding: 8px;
-      gap: 2px;
+      gap: 10px;
       a{
         text-decoration: none;
-        color: var(--text-color);
         font-size: 1.5em;
-        padding: 4px;
+        color: var(--text-color);
+        padding: 2px;
         border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+        &:hover{
+          transform: scale(1.1);
+        }
       }
     }
   }
@@ -240,6 +272,7 @@ body {
         display: flex;
         text-align: center;
         flex-direction: column;
+        transition: all 0.3s ease-in-out;
         h2{
           font-size: 20px;
           font-weight: bolder;
@@ -248,12 +281,15 @@ body {
         h4{
           font-size: 16px;
           font-weight: normal;
+          color:orangered;
+        }
+        &:hover{
+          transform: scale(1.2);
         }
       }
     }
   }
 }
-
 
 .projects-section{
   width: 100%;
@@ -317,10 +353,14 @@ body {
           padding: 10px;
           a{
             text-decoration: none;
-            color: var(--text-color);
+            background: rgba(255, 68, 0, 0.288);
             font-size: 1.5em;
             padding: 5px;
             border-radius: 50%;
+            transition: 0.3s ease-in-out all;
+            &:hover{
+              transform: scale(1.1);
+            }
           }
         }
       }
@@ -362,7 +402,8 @@ body {
         color: var(--text-color);
         border-radius: 5px;
       }
-      button{
+      .button{
+        margin-top: 25px;
         width: 100%;
         padding: 10px;
         border-radius: 5px;
@@ -374,7 +415,6 @@ body {
     }
   }
 }
-
 
 /* Footer */
 .footer {

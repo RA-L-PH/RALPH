@@ -21,21 +21,22 @@ function About(){
   return(
     <section className="about-section">
         <div className="neumorphic-flat profile-image">
-          <img className="neumorphic-concave" src="https://media.licdn.com/dms/image/v2/D4D03AQGHXfsiYiem9g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1691309793826?e=1737590400&v=beta&t=OKnjEXzc16n-nf5pV8JwIFRe4NLXaQ80bk-wLOSCHK8"/>
+          <img src="https://media.licdn.com/dms/image/v2/D4D03AQGHXfsiYiem9g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1691309793826?e=1737590400&v=beta&t=OKnjEXzc16n-nf5pV8JwIFRe4NLXaQ80bk-wLOSCHK8"/>
         </div>
         <div className="neumorphic-flat about-text">
-          <h1>Me?</h1>
-          <h2>Ralph Carvalho | {age}</h2>
-          <h4>Web-Developer</h4>
-          <h4><i>India</i></h4>
+          <h1>Ralph Carvalho</h1>
+          <h3><i>aka Firebase Alchemist | Frontend Mad-Scientist</i></h3>
+          <h2>{age}</h2>
+          <h4>Student | Web-Developer</h4>
+          <h4><i>Mumbai, India.</i></h4>
           <div className="social neumorphic-convex">
-            <a className="neumorphic-pressed" href="https://www.linkedin.com/in/ralph-carvalho-614b78257/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/ralph-carvalho-614b78257/" target="_blank" rel="noopener noreferrer">
               <RxLinkedinLogo/>
             </a>
-            <a className="neumorphic-pressed" href="https://github.com/RA-L-PH" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/RA-L-PH" target="_blank" rel="noopener noreferrer">
             <FaSquareGithub/>
             </a>
-            <a className="neumorphic-pressed" href="mailto:ralphaacarvalho@gmail.com">
+            <a href="mailto:ralphaacarvalho@gmail.com">
               <MdEmail/>
             </a>
           </div>

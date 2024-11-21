@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { RxLinkedinLogo } from "react-icons/rx";
 import { FaSquareGithub } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaFileDownload } from "react-icons/fa";
+
+import ppfeeimg from "../assets/istockphoto-899060402-612x612.jpg";
 
 function calculateAge(birthday) {
   const birthDate = new Date(birthday);
@@ -15,17 +17,71 @@ function calculateAge(birthday) {
   return age;
 }
 
+
 function About(){
   const birthday = "2004-04-09"; // Replace with your actual birthdate
   const age = calculateAge(birthday);
+  const firstName = "alph ";
+  const lastName = "arvalho";
+  const [fname, setfname] = useState("");
+  const [lname, setlname] = useState("");
+  const [ppflink, setppflink] = useState("https://media.licdn.com/dms/image/v2/D4D03AQGHXfsiYiem9g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1691309793826?e=1737590400&v=beta&t=OKnjEXzc16n-nf5pV8JwIFRe4NLXaQ80bk-wLOSCHK8");
+
+  const iterateNames = () => {
+    const firstNameArray = firstName.split("");
+    const lastNameArray = lastName.split("");
+    let i = 0;
+    const interval = setInterval(() => {
+      if (i < firstNameArray.length) {
+        setfname(firstNameArray.slice(0, i + 1).join(""));
+      }
+      if (i < lastNameArray.length) {
+        setlname(lastNameArray.slice(0, i + 1).join(""));
+      }
+      if (i === Math.max(firstNameArray.length, lastNameArray.length)) {
+        clearInterval(interval);
+      }
+      i++;
+    }, 50);
+  };
+
+    const reverseIterateNames = () => {
+      const firstNameArray = firstName.split("");
+      const lastNameArray = lastName.split("");
+      let i = Math.max(firstNameArray.length, lastNameArray.length);
+      const interval = setInterval(() => {
+        if (i >= 0) {
+          if (i <= firstNameArray.length) {
+            setfname(firstNameArray.slice(0, i).join(""));
+          }
+          if (i <= lastNameArray.length) {
+            setlname(lastNameArray.slice(0, i).join(""));
+          }
+        } else {
+          clearInterval(interval);
+        }
+        i--;
+      }, 50);
+    };
+
+    const ppfee = () => {
+      setppflink(ppfeeimg);
+    };
+    const ppfee2 = () => {
+      setppflink("https://media.licdn.com/dms/image/v2/D4D03AQGHXfsiYiem9g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1691309793826?e=1737590400&v=beta&t=OKnjEXzc16n-nf5pV8JwIFRe4NLXaQ80bk-wLOSCHK8");
+    };
+    
+  
 
   return(
     <section className="about-section">
         <div className="neumorphic-flat profile-image">
-          <img src="https://media.licdn.com/dms/image/v2/D4D03AQGHXfsiYiem9g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1691309793826?e=1737590400&v=beta&t=OKnjEXzc16n-nf5pV8JwIFRe4NLXaQ80bk-wLOSCHK8"/>
+        <div className="image-holder">
+          <img src={ppflink} alt="Profile" onMouseEnter={ppfee} onMouseLeave={ppfee2}/>
+          </div>
         </div>
         <div className="neumorphic-flat about-text">
-          <h1>Ralph Carvalho</h1>
+          <h1 onMouseEnter={iterateNames} onMouseLeave={reverseIterateNames}>R{fname}C{lname}</h1>
           <h3><i>aka Firebase Alchemist | Frontend Mad-Scientist</i></h3>
           <h2>{age}</h2>
           <h4>Student | Web-Developer</h4>

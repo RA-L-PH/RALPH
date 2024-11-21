@@ -57,7 +57,7 @@ body {
 }
 
 /* Light Theme */
-:root {
+body.light-theme {
   --background-color: #f2f2f2;
   --text-color: #4b0082; /* Indigo for text */
 
@@ -116,6 +116,268 @@ body.dark-theme {
   --violet-shadow-light: #b19cd9;
 }
 
+/*Seasons*/
+/* Summer Light Theme */
+body.summer-theme.light-theme {
+  --background-color: #f0f8ff; /* Light Azure Blue */
+  --text-color: #ff6347; /* Tomato Red */
+  --accent-color: #98fb98; /* Pale Green */
+  
+  /* Neumorphic Colors */
+  --flat-bg: #87ceeb; /* Sky Blue */
+  --flat-shadow-dark: #5f9ea0; /* Cadet Blue */
+  --flat-shadow-light: #b0e0e6; /* Powder Blue */
+  
+  /* Gradient Backgrounds */
+  --concave-bg: linear-gradient(145deg, #87ceeb, #b0e0e6);
+  --concave-shadow-dark: #5f9ea0;
+  --concave-shadow-light: #b0e0e6;
+
+  --convex-bg: linear-gradient(145deg, #b0e0e6, #87ceeb);
+  --convex-shadow-dark: #5f9ea0;
+  --convex-shadow-light: #b0e0e6;
+
+  --pressed-bg: #87ceeb;
+  --pressed-shadow-dark: #5f9ea0;
+  --pressed-shadow-light: #b0e0e6;
+
+}
+
+/* Summer Dark Theme */
+body.summer-theme.dark-theme {
+  --background-color: #1a2b3c; /* Deep Ocean Blue */
+  --text-color: #ff7f50; /* Coral */
+  --accent-color: #2e8b57; /* Sea Green */
+  
+  /* Neumorphic Colors */
+  --flat-bg: #2f4f4f; /* Dark Slate Gray */
+  --flat-shadow-dark: #1c2e3c; /* Darker Blue-Gray */
+  --flat-shadow-light: #3a5a6a; /* Lighter Blue-Gray */
+  
+  /* Gradient Backgrounds */
+  --concave-bg: linear-gradient(145deg, #2f4f4f, #3a5a6a);
+  --concave-shadow-dark: #1c2e3c;
+  --concave-shadow-light: #3a5a6a;
+
+  --convex-bg: linear-gradient(145deg, #3a5a6a, #2f4f4f);
+  --convex-shadow-dark: #1c2e3c;
+  --convex-shadow-light: #3a5a6a;
+
+  --pressed-bg: #2f4f4f;
+  --pressed-shadow-dark: #1c2e3c;
+  --pressed-shadow-light: #3a5a6a;
+
+}
+
+/* Monsoon Light Theme */
+body.monsoon-theme.light-theme {
+  --background-color: #e6f2ff; /* Misty Blue */
+  --text-color: #000000; /* Steel Blue */
+  --accent-color: #6495ed; /* Cornflower Blue */
+  
+  /* Neumorphic Colors */
+  --flat-bg: #778899; /* Slate Gray */
+  --flat-shadow-dark: #696969; /* Dim Gray */
+  --flat-shadow-light: #a9a9a9; /* Dark Gray */
+  
+  /* Gradient Backgrounds */
+  --concave-bg: linear-gradient(145deg, #778899, #a9a9a9);
+  --concave-shadow-dark: #696969;
+  --concave-shadow-light: #a9a9a9;
+
+  --convex-bg: linear-gradient(145deg, #a9a9a9, #778899);
+  --convex-shadow-dark: #696969;
+  --convex-shadow-light: #a9a9a9;
+
+  --pressed-bg: #778899;
+  --pressed-shadow-dark: #696969;
+  --pressed-shadow-light: #a9a9a9;
+
+}
+
+/* Monsoon Dark Theme */
+body.monsoon-theme.dark-theme {
+  --background-color: #1c2733; /* Dark Navy Blue */
+  --text-color: #87cefa; /* Light Sky Blue */
+  --accent-color: #4169e1; /* Royal Blue */
+  
+  /* Neumorphic Colors */
+  --flat-bg: #2c3e50; /* Dark Blue-Gray */
+  --flat-shadow-dark: #1a2b3c; /* Darker Blue-Gray */
+  --flat-shadow-light: #34495e; /* Lighter Blue-Gray */
+  
+  /* Gradient Backgrounds */
+  --concave-bg: linear-gradient(145deg, #2c3e50, #34495e);
+  --concave-shadow-dark: #1a2b3c;
+  --concave-shadow-light: #34495e;
+
+  --convex-bg: linear-gradient(145deg, #34495e, #2c3e50);
+  --convex-shadow-dark: #1a2b3c;
+  --convex-shadow-light: #34495e;
+
+  --pressed-bg: #2c3e50;
+  --pressed-shadow-dark: #1a2b3c;
+  --pressed-shadow-light: #34495e;
+
+}
+
+/* Autumn Light Theme */
+body.autumn-theme.light-theme {
+  --background-color: #fff5e6; /* Warm Cream */
+  --text-color: #000000; /* Saddle Brown */
+  --accent-color: #cd853f; /* Peru */
+  
+  /* Neumorphic Colors */
+  --flat-bg: #d2691e; /* Chocolate */
+  --flat-shadow-dark: #a0522d; /* Sienna */
+  --flat-shadow-light: #deb887; /* Burlywood */
+  
+  /* Gradient Backgrounds */
+  --concave-bg: linear-gradient(145deg, #d2691e, #deb887);
+  --concave-shadow-dark: #a0522d;
+  --concave-shadow-light: #deb887;
+
+  --convex-bg: linear-gradient(145deg, #deb887, #d2691e);
+  --convex-shadow-dark: #a0522d;
+  --convex-shadow-light: #deb887;
+
+  --pressed-bg: #d2691e;
+  --pressed-shadow-dark: #a0522d;
+  --pressed-shadow-light: #deb887;
+
+}
+
+/* Autumn Dark Theme */
+body.autumn-theme.dark-theme {
+  --background-color: #2c1810; /* Deep Maroon */
+  --text-color: #ff8c00; /* Dark Orange */
+  --accent-color: #a52a2a; /* Brown */
+  
+  /* Neumorphic Colors */
+  --flat-bg: #8b0000; /* Dark Red */
+  --flat-shadow-dark: #720000; /* Darker Red */
+  --flat-shadow-light: #7e3737; /* Indian Red */
+  
+  /* Gradient Backgrounds */
+  --concave-bg: linear-gradient(145deg, #8b0000, #cd5c5c);
+  --concave-shadow-dark: #5a0000;
+  --concave-shadow-light: #cd5c5c;
+
+  --convex-bg: linear-gradient(145deg, #cd5c5c, #8b0000);
+  --convex-shadow-dark: #5a0000;
+  --convex-shadow-light: #cd5c5c;
+
+  --pressed-bg: #8b0000;
+  --pressed-shadow-dark: #5a0000;
+  --pressed-shadow-light: #cd5c5c;
+
+}
+
+/* Winter Light Theme */
+body.winter-theme.light-theme {
+  --background-color: #f0f8ff; /* Icy Light Blue */
+  --text-color: #1e90ff; /* Dodger Blue */
+  --accent-color: #b0e0e6; /* Powder Blue */
+  
+  /* Neumorphic Colors */
+  --flat-bg: #b0e0e6; /* Powder Blue */
+  --flat-shadow-dark: #87ceeb; /* Sky Blue */
+  --flat-shadow-light: #e0ffff; /* Light Cyan */
+  
+  /* Gradient Backgrounds */
+  --concave-bg: linear-gradient(145deg, #b0e0e6, #e0ffff);
+  --concave-shadow-dark: #87ceeb;
+  --concave-shadow-light: #e0ffff;
+
+  --convex-bg: linear-gradient(145deg, #e0ffff, #b0e0e6);
+  --convex-shadow-dark: #87ceeb;
+  --convex-shadow-light: #e0ffff;
+
+  --pressed-bg: #b0e0e6;
+  --pressed-shadow-dark: #87ceeb;
+  --pressed-shadow-light: #e0ffff;
+
+}
+
+/* Winter Dark Theme */
+body.winter-theme.dark-theme {
+  --background-color: #0a1128; /* Deep Navy Blue */
+  --text-color: #87cefa; /* Light Sky Blue */
+  --accent-color: #4169e1; /* Royal Blue */
+  
+  /* Neumorphic Colors */
+  --flat-bg: #191970; /* Midnight Blue */
+  --flat-shadow-dark: #000080; /* Navy Blue */
+  --flat-shadow-light: #4169e1; /* Royal Blue */
+  
+  /* Gradient Backgrounds */
+  --concave-bg: linear-gradient(145deg, #191970, #4169e1);
+  --concave-shadow-dark: #000080;
+  --concave-shadow-light: #4169e1;
+
+  --convex-bg: linear-gradient(145deg, #4169e1, #191970);
+  --convex-shadow-dark: #000080;
+  --convex-shadow-light: #4169e1;
+
+  --pressed-bg: #191970;
+  --pressed-shadow-dark: #000080;
+  --pressed-shadow-light: #4169e1;
+
+}
+
+/* Spring Light Theme */
+body.spring-theme.light-theme {
+  --background-color: #fffaf0; /* Floral White */
+  --text-color: #ff69b4; /* Hot Pink */
+  --accent-color: #ffb6c1; /* Light Pink */
+  
+  /* Neumorphic Colors */
+  --flat-bg: #ffb6c1; /* Light Pink */
+  --flat-shadow-dark: #cd5c5c; /* Indian Red */
+  --flat-shadow-light: #ffe4e1; /* Misty Rose */
+  
+  /* Gradient Backgrounds */
+  --concave-bg: linear-gradient(145deg, #ffb6c1, #ffe4e1);
+  --concave-shadow-dark: #cd5c5c;
+  --concave-shadow-light: #ffe4e1;
+
+  --convex-bg: linear-gradient(145deg, #ffe4e1, #ffb6c1);
+  --convex-shadow-dark: #cd5c5c;
+  --convex-shadow-light: #ffe4e1;
+
+  --pressed-bg: #ffb6c1;
+  --pressed-shadow-dark: #cd5c5c;
+  --pressed-shadow-light: #ffe4e1;
+
+}
+
+/* Spring Dark Theme */
+body.spring-theme.dark-theme {
+  --background-color: #2a1a2f; /* Deep Plum */
+  --text-color: #ff1493; /* Deep Pink */
+  --accent-color: #8b008b; /* Dark Magenta */
+  
+  /* Neumorphic Colors */
+  --flat-bg: #8b008b; /* Dark Magenta */
+  --flat-shadow-dark: #4b0082; /* Indigo */
+  --flat-shadow-light: #ff69b4; /* Hot Pink */
+  
+  /* Gradient Backgrounds */
+  --concave-bg: linear-gradient(145deg, #8b008b, #ff69b4);
+  --concave-shadow-dark: #4b0082;
+  --concave-shadow-light: #ff69b4;
+
+  --convex-bg: linear-gradient(145deg, #ff69b4, #8b008b);
+  --convex-shadow-dark: #4b0082;
+  --convex-shadow-light: #ff69b4;
+
+  --pressed-bg: #8b008b;
+  --pressed-shadow-dark: #4b0082;
+  --pressed-shadow-light: #ff69b4;
+}
+
+
+
 /* Apply Variables */
 body {
   background-color: var(--background-color);
@@ -128,7 +390,7 @@ body {
 .neumorphic-flat {
   background: var(--flat-bg);
   box-shadow:  7px 7px 14px var(--flat-shadow-dark),
-             -7px -7px 14px var(--flat-shadow-light);
+             -5px -5px 14px var(--flat-shadow-light);
   transition: box-shadow 0.3s;
 }
 
@@ -225,13 +487,16 @@ main{
     justify-content: center;
     align-items: center;
     border-radius: 15px;
-
-    img{
-      padding: 5px;
+    .image-holder{
       width: 200px;
       height: 200px;
       border-radius: 50%;
-      border: orangered 2px solid;
+      overflow: hidden;
+      transition: all 0.6s ease-in-out;
+      img{
+        width: 200px;
+        height: auto;
+    }
     }
   }
   .about-text{
@@ -244,7 +509,6 @@ main{
     text-align: left;
     border-radius: 15px;
     h1 {
-      color: orangered;
       font-size: 2em;
       font-weight: bolder;
     }
@@ -281,7 +545,6 @@ main{
           color: var(--text-color);
           padding: 2px;
           border-radius: 5px;
-          transition: all 0.3s ease-in-out;
           &:hover{
             transform: scale(1.1);
           }
@@ -300,7 +563,6 @@ main{
         color: var(--text-color);
         font-size: 1.5em;
         text-decoration: none;
-        transition: all 0.3s ease-in-out;
         p{
           font-size: 0.75em !important;
         }
@@ -318,6 +580,39 @@ main{
   padding: 1.25rem;
   justify-content: center;
   display: flex;
+
+  .skill-category-selector {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    gap: 20px;
+  }
+  
+  .radio-label {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .radio-label input {
+    opacity: 0;
+    position: absolute;
+  }
+  
+  .radio-label span {
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    border: var(--text-color) 2px solid;
+    color: var(--text-color);
+  }
+  
+  .radio-label input:checked + span {
+    background-color: var(--text-color);
+    color: var(--background-color);
+  }
   .skill-container{
     padding: 1.25rem;
     width: min(95%, 720px);
@@ -389,7 +684,7 @@ main{
       .project-card{
         align-self: center;
         justify-self: center;
-        width: 70%;
+        width: 80%;
         height: 320px;
         border-radius: 8px;
         padding: 10px;

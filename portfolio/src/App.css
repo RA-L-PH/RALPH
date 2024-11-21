@@ -37,9 +37,9 @@ body {
   --pressed-shadow-dark: #b3b3cc; /* Dark Lavender */
   --pressed-shadow-light: #ffffff;
 
-  --lavender-bg: #e6e6fa;
-  --lavender-shadow-dark: #b3b3cc;
-  --lavender-shadow-light: #ffffff;
+  --violet-bg: #e6e6fa;
+  --violet-shadow-dark: #b3b3cc;
+  --violet-shadow-light: #ffffff;
 }
 
 /* Dark Theme */
@@ -213,24 +213,52 @@ main{
     h4 {
       font-size: 1.5em;
     }
-    .social{
+    .social-resume{
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      background: var(--violet-bg);
-      width: 175px;
-      border-radius: 10px;
-      box-shadow: inset 7px 7px 14px var(--violet-shadow-dark), inset -7px -7px 14px var(--violet-shadow-light); /* Pressed style */
-      justify-content: space-evenly;
-      padding: 8px;
-      gap: 10px;
-      a{
-        text-decoration: none;
-        font-size: 1.5em;
+      justify-content: flex-start;
+      gap:20px;
+      .social{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background: var(--violet-bg);
+        width: 175px;
+        border-radius: 10px;
+        box-shadow: inset 7px 7px 14px var(--violet-shadow-dark), inset -7px -7px 14px var(--violet-shadow-light); /* Pressed style */
+        justify-content: space-evenly;
+        padding: 8px;
+        gap: 10px;
+        a{
+          text-decoration: none;
+          font-size: 1.5em;
+          color: var(--text-color);
+          padding: 2px;
+          border-radius: 5px;
+          transition: all 0.3s ease-in-out;
+          &:hover{
+            transform: scale(1.1);
+          }
+        }
+      }
+      .resume{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background: var(--violet-bg);
+        width: 175px;
+        border-radius: 10px;
+        box-shadow: inset 7px 7px 14px var(--violet-shadow-dark), inset -7px -7px 14px var(--violet-shadow-light); /* Pressed style */
+        justify-content: space-evenly;
+        padding: 10px;
         color: var(--text-color);
-        padding: 2px;
-        border-radius: 5px;
+        font-size: 1.5em;
+        text-decoration: none;
         transition: all 0.3s ease-in-out;
+        p{
+          font-size: 0.75em !important;
+        }
         &:hover{
           transform: scale(1.1);
         }
@@ -284,7 +312,7 @@ main{
           color:orangered;
         }
         &:hover{
-          transform: scale(1.2);
+          transform: scale(1.1);
         }
       }
     }
@@ -411,6 +439,11 @@ main{
         background-color: var(--background-color);
         color: var(--text-color);
         cursor: pointer;
+        transition: all 0.6s ease-in;
+        &:hover{
+          box-shadow: inset 7px 7px 14px var(--pressed-shadow-dark), inset -7px -7px 14px var(--pressed-shadow-light);
+          transition: all 0.6s ease-out;
+        }
       }
     }
   }

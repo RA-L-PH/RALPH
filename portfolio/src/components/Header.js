@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/RC-removebg-preview.png";
+import logo from "../assets/logo.png";
 import ThemeToggle from "./ThemeToggle";
 
 function Header() {

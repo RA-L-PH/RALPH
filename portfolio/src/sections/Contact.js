@@ -12,7 +12,7 @@ function Contact(){
             <input className="neumorphic-pressed" type="email" id="email" name="email" required/>
             <label for="message">Message:</label>
             <textarea className="neumorphic-pressed" id="message" name="message" rows="4" required></textarea>
-            <input className="button neumorphic-concave" type="submit" value="Submit"/>
+            <input className="button neumorphic-convex" type="submit" value="Submit"/>
         </form>
       </div>
       <div className="neumorphic-flat feedback-form">
@@ -24,7 +24,7 @@ function Contact(){
         <input className="neumorphic-pressed" type="email" id="email" name="email" required/>
         <label for="message">Message:</label>
         <textarea className="neumorphic-pressed" id="message" name="message" rows="4" required></textarea>
-        <input className="button neumorphic-concave" type="submit" value="Submit"/>
+        <input className="button neumorphic-convex" type="submit" value="Submit"/>
         </form>
       </div>
     </section>

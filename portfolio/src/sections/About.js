@@ -2,6 +2,7 @@ import React from "react";
 import { RxLinkedinLogo } from "react-icons/rx";
 import { FaSquareGithub } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
+import { FaFileDownload } from "react-icons/fa";
 
 function calculateAge(birthday) {
   const birthDate = new Date(birthday);
@@ -29,6 +30,7 @@ function About(){
           <h2>{age}</h2>
           <h4>Student | Web-Developer</h4>
           <h4><i>Mumbai, India.</i></h4>
+          <div className="social-resume">
           <div className="social neumorphic-convex">
             <a href="https://www.linkedin.com/in/ralph-carvalho-614b78257/" target="_blank" rel="noopener noreferrer">
               <RxLinkedinLogo/>
@@ -40,6 +42,13 @@ function About(){
               <MdEmail/>
             </a>
           </div>
+          <a href="#">
+          <div className="resume neumorphic-convex">
+            <FaFileDownload/>
+            <p>Resume</p>
+          </div>
+          </a>
+        </div>
         </div>
     </section>
   )

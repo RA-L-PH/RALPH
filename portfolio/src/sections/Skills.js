@@ -49,9 +49,9 @@ function Skills() {
         <h1>Skills</h1>
         
         {/* Sliding Radio Button */}
-        <div className="skill-category-selector">
+        <div className="skill-category-selector neumorphic-pressed">
           {Object.keys(skillCategories).map((category) => (
-            <label key={category} className="radio-label">
+            <label key={category} className="radio-label neumorphic-convex">
               <input
                 type="radio"
                 name="skillCategory"

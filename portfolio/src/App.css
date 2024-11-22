@@ -84,6 +84,8 @@ body.light-theme {
   --violet-bg: #e6e6fa;
   --violet-shadow-dark: #b3b3cc;
   --violet-shadow-light: #ffffff;
+
+  --skill-level-color: orangered;
 }
 
 /* Dark Theme */
@@ -114,6 +116,8 @@ body.dark-theme {
   --violet-bg: #8a2be2;
   --violet-shadow-dark: #5e1a91;
   --violet-shadow-light: #b19cd9;
+
+  --skill-level-color: orangered;
 }
 
 /*Seasons*/
@@ -141,6 +145,8 @@ body.summer-theme.light-theme {
   --pressed-shadow-dark: #5f9ea0;
   --pressed-shadow-light: #b0e0e6;
 
+  --skill-level-color: green;
+
 }
 
 /* Summer Dark Theme */
@@ -166,6 +172,8 @@ body.summer-theme.dark-theme {
   --pressed-bg: #2f4f4f;
   --pressed-shadow-dark: #1c2e3c;
   --pressed-shadow-light: #3a5a6a;
+
+  --skill-level-color: limegreen;
 
 }
 
@@ -193,6 +201,7 @@ body.monsoon-theme.light-theme {
   --pressed-shadow-dark: #696969;
   --pressed-shadow-light: #a9a9a9;
 
+  --skill-level-color: blue;
 }
 
 /* Monsoon Dark Theme */
@@ -219,6 +228,7 @@ body.monsoon-theme.dark-theme {
   --pressed-shadow-dark: #1a2b3c;
   --pressed-shadow-light: #34495e;
 
+  --skill-level-color: lightblue;
 }
 
 /* Autumn Light Theme */
@@ -244,6 +254,8 @@ body.autumn-theme.light-theme {
   --pressed-bg: #d2691e;
   --pressed-shadow-dark: #a0522d;
   --pressed-shadow-light: #deb887;
+
+  --skill-level-color: yellow;
 
 }
 
@@ -271,6 +283,7 @@ body.autumn-theme.dark-theme {
   --pressed-shadow-dark: #5a0000;
   --pressed-shadow-light: #cd5c5c;
 
+  --skill-level-color: lightyellow;
 }
 
 /* Winter Light Theme */
@@ -296,6 +309,8 @@ body.winter-theme.light-theme {
   --pressed-bg: #b0e0e6;
   --pressed-shadow-dark: #87ceeb;
   --pressed-shadow-light: #e0ffff;
+
+  --skill-level-color: grey;
 
 }
 
@@ -323,6 +338,8 @@ body.winter-theme.dark-theme {
   --pressed-shadow-dark: #000080;
   --pressed-shadow-light: #4169e1;
 
+  --skill-level-color: lightgrey;
+
 }
 
 /* Spring Light Theme */
@@ -349,12 +366,14 @@ body.spring-theme.light-theme {
   --pressed-shadow-dark: #cd5c5c;
   --pressed-shadow-light: #ffe4e1;
 
+  --skill-level-color: red;
+
 }
 
 /* Spring Dark Theme */
 body.spring-theme.dark-theme {
   --background-color: #2a1a2f; /* Deep Plum */
-  --text-color: #ff1493; /* Deep Pink */
+  --text-color: hsl(328, 100%, 86%); /* Deep Pink */
   --accent-color: #8b008b; /* Dark Magenta */
   
   /* Neumorphic Colors */
@@ -374,6 +393,8 @@ body.spring-theme.dark-theme {
   --pressed-bg: #8b008b;
   --pressed-shadow-dark: #4b0082;
   --pressed-shadow-light: #ff69b4;
+
+  --skill-level-color: hotpink;
 }
 
 
@@ -586,7 +607,12 @@ main{
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 20px;
+    padding: 13px;
+    width: fit-content;
+    border-radius: 20px;
     gap: 20px;
+    align-self: center;
+    justify-self: center;
   }
   
   .radio-label {
@@ -594,6 +620,7 @@ main{
     display: inline-flex;
     align-items: center;
     cursor: pointer;
+    border-radius: 20px;
   }
   
   .radio-label input {
@@ -649,7 +676,7 @@ main{
         h4{
           font-size: 16px;
           font-weight: normal;
-          color:orangered;
+          color: var(--skill-level-color);
         }
         &:hover{
           transform: scale(1.1);

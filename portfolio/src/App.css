@@ -125,7 +125,6 @@ body.dark-theme {
 body.summer-theme.light-theme {
   --background-color: #f0f8ff; /* Light Azure Blue */
   --text-color: #ff6347; /* Tomato Red */
-  --accent-color: #98fb98; /* Pale Green */
   
   /* Neumorphic Colors */
   --flat-bg: #87ceeb; /* Sky Blue */
@@ -153,7 +152,6 @@ body.summer-theme.light-theme {
 body.summer-theme.dark-theme {
   --background-color: #1a2b3c; /* Deep Ocean Blue */
   --text-color: #ff7f50; /* Coral */
-  --accent-color: #2e8b57; /* Sea Green */
   
   /* Neumorphic Colors */
   --flat-bg: #2f4f4f; /* Dark Slate Gray */
@@ -181,7 +179,6 @@ body.summer-theme.dark-theme {
 body.monsoon-theme.light-theme {
   --background-color: #e6f2ff; /* Misty Blue */
   --text-color: #000000; /* Steel Blue */
-  --accent-color: #6495ed; /* Cornflower Blue */
   
   /* Neumorphic Colors */
   --flat-bg: #778899; /* Slate Gray */
@@ -208,7 +205,6 @@ body.monsoon-theme.light-theme {
 body.monsoon-theme.dark-theme {
   --background-color: #1c2733; /* Dark Navy Blue */
   --text-color: #87cefa; /* Light Sky Blue */
-  --accent-color: #4169e1; /* Royal Blue */
   
   /* Neumorphic Colors */
   --flat-bg: #2c3e50; /* Dark Blue-Gray */
@@ -235,7 +231,6 @@ body.monsoon-theme.dark-theme {
 body.autumn-theme.light-theme {
   --background-color: #fff5e6; /* Warm Cream */
   --text-color: #000000; /* Saddle Brown */
-  --accent-color: #cd853f; /* Peru */
   
   /* Neumorphic Colors */
   --flat-bg: #d2691e; /* Chocolate */
@@ -263,7 +258,6 @@ body.autumn-theme.light-theme {
 body.autumn-theme.dark-theme {
   --background-color: #2c1810; /* Deep Maroon */
   --text-color: #ff8c00; /* Dark Orange */
-  --accent-color: #a52a2a; /* Brown */
   
   /* Neumorphic Colors */
   --flat-bg: #8b0000; /* Dark Red */
@@ -290,7 +284,6 @@ body.autumn-theme.dark-theme {
 body.winter-theme.light-theme {
   --background-color: #f0f8ff; /* Icy Light Blue */
   --text-color: #1e90ff; /* Dodger Blue */
-  --accent-color: #b0e0e6; /* Powder Blue */
   
   /* Neumorphic Colors */
   --flat-bg: #b0e0e6; /* Powder Blue */
@@ -318,7 +311,6 @@ body.winter-theme.light-theme {
 body.winter-theme.dark-theme {
   --background-color: #0a1128; /* Deep Navy Blue */
   --text-color: #87cefa; /* Light Sky Blue */
-  --accent-color: #4169e1; /* Royal Blue */
   
   /* Neumorphic Colors */
   --flat-bg: #191970; /* Midnight Blue */
@@ -346,7 +338,6 @@ body.winter-theme.dark-theme {
 body.spring-theme.light-theme {
   --background-color: #fffaf0; /* Floral White */
   --text-color: #ff69b4; /* Hot Pink */
-  --accent-color: #ffb6c1; /* Light Pink */
   
   /* Neumorphic Colors */
   --flat-bg: #ffb6c1; /* Light Pink */
@@ -374,7 +365,6 @@ body.spring-theme.light-theme {
 body.spring-theme.dark-theme {
   --background-color: #2a1a2f; /* Deep Plum */
   --text-color: hsl(328, 100%, 86%); /* Deep Pink */
-  --accent-color: #8b008b; /* Dark Magenta */
   
   /* Neumorphic Colors */
   --flat-bg: #8b008b; /* Dark Magenta */

@@ -42,7 +42,7 @@ function About(){
         clearInterval(interval);
       }
       i++;
-    }, 50);
+    }, 65);
   };
 
     const reverseIterateNames = () => {
@@ -61,7 +61,7 @@ function About(){
           clearInterval(interval);
         }
         i--;
-      }, 50);
+      }, 65);
     };
 
     const ppfee = () => {

@@ -558,6 +558,7 @@ main{
           border-radius: 5px;
           &:hover{
             transform: scale(1.1);
+            transition: all 0.3s ease-in-out;
           }
         }
       }
@@ -579,6 +580,7 @@ main{
         }
         &:hover{
           transform: scale(1.1);
+          transition: all 0.3s ease-in-out;
         }
       }
     }
